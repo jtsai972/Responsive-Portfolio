@@ -1,0 +1,155 @@
+/* General Page Style */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #ddd url("../images/strange_bullseyes.png") repeat center;
+    background-color: #ddd;
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 100%;
+    height: auto;
+    line-height: 1.6em;
+    margin: auto;
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+a {
+    color:#4aaaa5;
+    text-decoration: none;
+}
+article a:hover, article a:visited {
+    color: #a54aaa;
+    text-decoration: underline;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+}
+    header h1 {
+        background-color: #4aaaa5;
+        color: #fff;
+        display: inline-block;
+        margin: 0;
+        padding: 1em;
+    }
+    nav {
+        float: right;
+    }
+        nav, nav ul {
+            display: inline-block;
+            margin: 0 auto;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+        }
+        nav a {
+            color: #777;
+            display: inline-block;
+            padding: 2em 1.5em;
+        }
+        nav a:hover {
+            background: #4aaaa5;
+            color: white;
+            text-decoration: none;
+        }
+
+    .wrap, article {
+        margin: 0 auto;
+        width: 90%;
+            max-width: 960px;
+    }
+
+article {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin: 2em auto;
+        margin-bottom: 8em;
+    padding: 1em 2em;
+}
+    h2 {
+        border-bottom: 2px solid #ccc;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+        padding: 1em 0;
+    }  
+
+footer {
+    background-color: #666;
+    border-top: 0.5em solid #4aaaa5;
+    color: #ddd;
+    padding-top: 2em;
+    position: fixed;
+        bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+footer p {
+    margin-bottom: 0.5em;
+}
+
+/* About Page styles */
+.avatar {
+    float: left;
+    margin-right: 1.5em;
+    width: 25%;
+}
+
+/* Portfolio Page styles */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+figure {
+    margin: 0;
+        margin-bottom: 1em;
+        margin-right: 3em;
+    position: relative;
+    width: 33%;
+}
+figure img {
+    width: 100%;
+}
+figure figcaption {
+    background: #4aaaa5;
+    color: white;
+    margin-bottom: 1em;
+    padding: 1em;
+    position: absolute;
+        bottom: 0.5em;
+    text-align: center;
+    width: 100%;
+}
+
+/* Contact Page styles */
+label, input, textarea {
+    display: block;
+    width: 100%;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+    input[value] {
+        color: #777;
+    }
+    
+textarea {
+    min-height: 16em;
+}
+button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 1em 2em;
+}
