@@ -13,6 +13,11 @@ body {
     line-height: 1.6em;
     margin: auto;
     overflow: auto;
+
+    /* trying something new: using display flex for sticky footer */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,6 +36,7 @@ article a:hover, article a:visited {
 header {
     background-color: #fff;
     border-bottom: 2px solid #ccc;
+    overflow: auto;
 }
     header h1 {
         background-color: #4aaaa5;
@@ -45,6 +51,7 @@ header {
         nav, nav ul {
             display: inline-block;
             margin: 0 auto;
+            padding: 0;
         }
         nav ul li {
             display: inline-block;
@@ -73,6 +80,9 @@ article {
     margin: 2em auto;
         margin-bottom: 8em;
     padding: 1em 2em;
+
+    /* Adjusting for flex */
+    flex: 1 0 auto;
 }
     h2 {
         border-bottom: 2px solid #ccc;
@@ -90,6 +100,9 @@ footer {
         bottom: 0;
     text-align: center;
     width: 100%;
+
+    /* Styling for flex */
+    flex-shrink: 0;
 }
 footer p {
     margin-bottom: 0.5em;
@@ -152,4 +165,38 @@ button {
     border: none;
     color: white;
     padding: 1em 2em;
+}
+
+@media screen and (max-width: 980px) {
+
+    nav a {
+        padding: 2em 1em;
+    }
+    article {
+        margin-left: 3em;
+        width: 60%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .wrap, article {
+        width: 96%;
+    }
+    article {
+        margin: 2em auto;
+        margin-bottom: 8em;
+    }
+    
+}
+@media screen and (max-width: 640px) {
+    .wrap {
+        width: 100%;
+    }
+    header h1, nav {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    
 }
